@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>   
+
+<div class="sidebar-inner">
+    <div class="userlogo">
+    <img src="icon.png" class="user-pic" onclick="toggleMenu()">
+    <h1>Joshua </h1>
+    </div>
+
+    <div class="sub-menu-wrap" id="subMenu">
+        <div class="sub-menu">
+            <div class="user-info">
+                <img src="icon.png">
+                <h3>Joshua </h3>               
+            </div>
+            <hr>
+
+            <a href="#" class="sub-menu-link">
+                 <p>Account Settings</p>
+                 <span>></span>
+            </a>
+
+            <a href="#" class="sub-menu-link">
+                 <p>Get help </p>
+                 <span>></span>
+            </a>
+
+            <a href="#" class="sub-menu-link">
+                 <p>Privacy Policy</p>
+                 <span>></span>
+            </a>
+
+            <a href="#" class="sub-menu-link">
+                 <p>Sign Out</p>
+                 <span>></span>
+            </a>
+        </div>
+    </div>
+
+<script>
+    let subMenu = document.getElementById("subMenu");
+
+    function toggleMenu(){
+        subMenu.classList.toggle("open-menu");
+    }
+</script>

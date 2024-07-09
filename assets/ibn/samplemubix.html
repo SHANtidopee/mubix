@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design/style.css">
+</head>    
+
+<body>
+    <div class="hero">
+        <nav>
+            <img src="img assets/mu.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+            <img src="img assets/icon.png" class="pic-user" onclick="toggleMenu()">
+
+            <div class="menu-sub-wrap" id="subMenu">
+                <div class="menu-sub">
+                    <div class="info-user">
+                        <img src="img assets/icon.png">
+                        <h3>Sunga <br><p>Sungacarl@gmail.com</p> </h3>
+                                 
+                    </div>
+                       
+                    <hr>
+        
+                    <a href="accountset.html" class="link-menu-sub">
+                        <img src="img assets/acc sett.jpg">
+                         <p>Account Settings</p>
+                         <span>></span>
+                    </a>
+
+                    <a href="libra/index.html" class="link-menu-sub">
+                        <img src="img assets/library.png">
+                        <p>Watch Later</p>
+                        <span>></span>
+                   </a>
+        
+                    <a href="copyright.html" class="link-menu-sub">
+                        <img src="img assets/policy.png">
+                         <p>Terms & Use</p>
+                         <span>></span>
+                    </a>
+
+                    <!--<a href="copyright.html" class="link-menu-sub">
+                        <img src="img assets/copyriGht.png">
+                         <p>Copyright</p>
+                         <span>></span>
+                    </a>-->
+        
+                    <a href="index.html" class="link-menu-sub">
+                        <img src="img assets/logout.png">
+                         <p>Sign Out</p>
+                         <span>></span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+
+
+    <script>
+        let subMenu = document.getElementById("subMenu");
+    
+        function toggleMenu(){
+            subMenu.classList.toggle("open-menu");
+        }
+    </script>
+
+    <script src="./sample.js"></script>
+
+</body>
+   
+</html>

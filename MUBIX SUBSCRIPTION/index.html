@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription</title>
+    <link rel="shortcut icon" href="./MUBIX - FOR PESENTATION/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="col-1">
+        <img src="images/logo.png" class="logo">
+        <ul>
+          <li><img src="images/icon.png">Unlimited movies and shows.</li>
+          <li><img src="images/icon.png">Watch anywhere, anytime.</li>
+          <li><img src="images/icon.png">Multi-platform Availability.</li>
+          <li><img src="images/icon.png">Free video downloads.</li>
+          <li><img src="images/icon.png">No Ad breaks.</li>
+        </ul>
+      </div>
+      <div class="col-2">
+        <h2><img src="images/icon.png">Premium Plans</h2>
+        <form>
+          <label for="week">
+            <input type="radio" name="plans" id="week">
+            <span>₱30 <small>/week</small></span>
+          </label>
+          <label for="month">
+            <input type="radio" name="plans" id="month">
+            <span>₱100 <small>/month</small></span> 
+          </label>
+          <label for="annual">
+            <input type="radio" name="plans" id="annual">
+            <span>₱300 <small>/annual</small></span> 
+          </label>
+          <br>
+          <button type="button" onclick="checkSelection()">Continue</button>
+        </form>  
+      </div>
+    </div>
+
+    <script>
+      function checkSelection() {
+        var selectedPlan = document.querySelector('input[name="plans"]:checked');
+        if (selectedPlan) {
+          notifyAndRedirect();
+        } else {
+          alert("Please select a plan.");
+        }
+      }
+
+      function notifyAndRedirect() {
+        alert("Thank you for subscribing!");
+        window.location.href = "./MUBIX - FOR PESENTATION/index.html";
+      }
+    </script>
+  </body>
+</html>

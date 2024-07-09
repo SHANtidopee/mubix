@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content=" MUBIX is the underdog for movie streaming made by Saikyo.">
+
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+
+    <script src="./assets/js/theme.js" defer></script>
+    <script src="./assets/js/global.js" defer></script>
+    <script src="./assets/js/watch-later.js" type="module"></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <a href="./index.html" class="logo">
+            <img src="./assets/images/logo.svg" width="140" height="32" alt="MUBIX home">
+        </a>
+
+        <div class="search-box" search-box>
+            <div class="search-wrapper" search-wrapper>
+                <input type="text" name="search" aria-label="search movies" placeholder="Search a movie ..." class="search-field" autocomplete="on" search-field>
+
+                <img src="./assets/images/search.png" width="24" height="24" alt="search" class="leading-icon">
+            </div>
+
+            <button class="search-btn" search-toggler>
+                <img src="./assets/images/close.png" width="24" height="24" alt="close search box">
+            </button>
+        </div>
+
+        <button class="search-btn" search-toggler menu-close>
+            <img src="./assets/images/search.png" width="24" height="24" alt="open search box">
+        </button>
+
+        <i class="bi bi-brightness-high-fill" id="toggleDark"></i>
+
+        <button class="menu-btn" menu-btn menu-toggler>
+            <img src="./assets/images/menu.png" width="24" height="24" alt="open menu" class="menu">
+            <img src="./assets/images/menu-close.png" width="24" height="24" alt="close menu" class="close">
+        </button>
+
+    </header>
+
+    <!-- SIDEBAR -->
+
+    <nav class="sidebar" sidebar>
+        <br>
+        <img src="./assets/images/icon.png" class="pic-user" onclick="toggleMenu()">
+            <p>Jhero Consancio</p>
+
+            <div class="menu-sub-wrap" id="subMenu">
+                <div class="menu-sub">
+                    <div class="info-user">
+                        <img src="./assets/images/icon.png">
+                        <h3>Jhero Consancio <p>consancioj@gmail.com</p> </h3>
+                        
+                                 
+                    </div>
+                       
+                    <hr>
+        
+                    <a href="./assets/ibn/accountset.html" class="link-menu-sub">
+                        <img src="./assets/images/acc sett.jpg">
+                         <p>Account Settings</p>
+                         <span>></span>
+                    </a>
+        
+                    <a href="./assets/ibn/copyright.html" class="link-menu-sub">
+                        <img src="./assets/images/policy.png">
+                         <p>Terms & Use</p>
+                         <span>></span>
+                    </a>
+
+        
+                    <a href="../../../index.html" class="link-menu-sub">
+                        <img src="./assets/images/logout.png">
+                         <p>Sign Out</p>
+                         <span>></span>
+                    </a>
+                </div>
+            </div>
+      
+        <script>
+            let subMenu = document.getElementById("subMenu");
+        
+            function toggleMenu(){
+                subMenu.classList.toggle("open-menu");
+            }
+        </script>
+    </nav>
+    <div class="overlay" overlay menu-toggler></div>
+
+    <main>
+        <article class="container" page-content></article>
+    </main>
+
+    <footer>
+
+    </footer>
+
+
+</body>
+
+</html>
